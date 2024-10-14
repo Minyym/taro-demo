@@ -41,31 +41,45 @@ export default function Index() {
   ];
   return (
     <>
-      <View className="block-ddd"></View>
-      <View className=" text-[14px] block">
-        <View className="m-flex ">
-          <Text>收入合计</Text>
-          <Text className="iconfont icon-wenhao color-628BDC padding-3"></Text>
-          <Text> ：</Text>
-          <View className="m-flex m-flex-justify-end width-73 ">
-            <Text>13755.12元</Text>
+      <View className="fixed w-full bg-[#fff] ">
+        <View className="  w-full text-[16px] font-normal flex justify-between px-[15px] py-[5px] items-center">
+          <View className=" text-[#467FE5]">
+            <Text className="iconfont icon-zuojiantou font-bold"></Text>
+            <Text>返回</Text>
+          </View>
+          <Text className=" text-[18px]">收入纳税明细</Text>
+          <View className="text-[#467FE5]">批量申诉</View>
+        </View>
+        <View className="br-bottom "></View>
+
+        <View className="w-full h-[10px] bg-[#f4f6f9] "></View>
+        <View className=" text-[16px] p-[15px] font-medium">
+          <View className="flex pb-[5px]">
+            <Text>收入合计</Text>
+            <Text className="iconfont icon-wenhao text-[#467FE5] px-[4px] pt-[6px]"></Text>
+            <Text> ：</Text>
+            <View className="flex justify-end w-[69.5%]">
+              <Text>13755.12元</Text>
+            </View>
+          </View>
+          <View className="br-bottom "></View>
+          <View className="flex justify-between pt-[5px]">
+            <Text>已申报税额合计：</Text>
+            <Text>6355.12元</Text>
           </View>
         </View>
-        <View className="br-bottom"></View>
-        <View className="m-flex m-flex-justify-between">
-          <Text>已申报税额合计：</Text>
-          <Text>6355.12元</Text>
-        </View>
+        <View className="w-full h-[10px] bg-[#f4f6f9]"></View>
       </View>
-      <View className="block-ddd"></View>
+      <View className="pt-[125px]"></View>
+
       {list.map((i, index) => {
         return (
-          <View key={index} className="block">
-            <View className="m-flex m-flex-justify-between">
-              <View className="color-9E9EA0  block-left text-14">
-                <View className=" m-flex m-flex-justify-between color-000 text-16">
+          <View key={index} className="p-[15px] leading-loose ">
+            <View className="flex justify-between">
+              <View className="text-[#9E9EA0]  w-[85%] text-[16px]">
+                <View className=" flex justify-between text-[#000] text-[18px]">
                   <Text className="">工资薪资</Text>
-                  <Text>2024-09</Text>
+                  <Text>{i.time}</Text>
                 </View>
 
                 <View>
@@ -78,14 +92,14 @@ export default function Index() {
                 </View>
                 <View>
                   <Text>收入：</Text>
-                  <Text>15000元</Text>
+                  <Text>{i.income}元</Text>
                 </View>
                 <View>
                   <Text>已申报税额：</Text>
-                  <Text>965.12元</Text>
+                  <Text>{i.tax}元</Text>
                 </View>
               </View>
-              <View className="color-ddd  m-flex m-flex-align-center text-20 iconfont icon-a-teshuyoujiantou "></View>
+              <View className="text-[#ddd]  flex items-center text-[20px] iconfont icon-a-teshuyoujiantou "></View>
             </View>
           </View>
         );
