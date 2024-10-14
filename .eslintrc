@@ -1,0 +1,8 @@
+{
+  "extends": ["taro/react"],
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "jsx-quotes": ["error", "prefer-double"] // 将其修改为允许双引号或其他设置
+  }
+}

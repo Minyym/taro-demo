@@ -1,0 +1,72 @@
+{
+  "id": "4709877",
+  "name": "taro",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12247926",
+      "name": "左箭头",
+      "font_class": "zuojiantou",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "34273050",
+      "name": "省略号",
+      "font_class": "shenglvehao",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "577319",
+      "name": "问号",
+      "font_class": "wenhao",
+      "unicode": "e72d",
+      "unicode_decimal": 59181
+    },
+    {
+      "icon_id": "10056825",
+      "name": "问号",
+      "font_class": "wenhao1",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "1002195",
+      "name": "笔",
+      "font_class": "bi",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "4933350",
+      "name": "金钱",
+      "font_class": "jinqian",
+      "unicode": "e73b",
+      "unicode_decimal": 59195
+    },
+    {
+      "icon_id": "16517973",
+      "name": "金钱管理",
+      "font_class": "jinqianguanli",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    },
+    {
+      "icon_id": "42064412",
+      "name": "特殊 下箭头",
+      "font_class": "a-teshuxiajiantou",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "42064413",
+      "name": "特殊 右箭头",
+      "font_class": "a-teshuyoujiantou",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    }
+  ]
+}
