@@ -42,8 +42,7 @@ export default function Index() {
   return (
     <>
       <View className="block-ddd"></View>
-
-      <View className="text-14 block">
+      <View className=" text-[14px] block">
         <View className="m-flex ">
           <Text>收入合计</Text>
           <Text className="iconfont icon-wenhao color-628BDC padding-3"></Text>
