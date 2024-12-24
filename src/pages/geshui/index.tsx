@@ -9,34 +9,46 @@ export default function Index() {
   });
   const list = [
     {
-      time: "2024-09",
-      name: "test",
-      income: 15000,
-      tax: 1390,
-    },
-    {
-      time: "2024-08",
-      name: "test",
-      income: 15000,
-      tax: 1390,
-    },
-    {
       time: "2024-07",
       name: "test",
-      income: 15000,
-      tax: 1390,
+      income: 20000.00,
+      tax: 1456.30,
     },
     {
       time: "2024-06",
       name: "test",
-      income: 15000,
-      tax: 1390,
+      income: 20000.00,
+      tax: 1456.31,
     },
     {
       time: "2024-05",
       name: "test",
-      income: 15000,
-      tax: 1390,
+      income: 20000.00,
+      tax: 1456.31,
+    },
+    {
+      time: "2024-04",
+      name: "test",
+      income: 20000.00,
+      tax: 1456.30,
+    },
+    {
+      time: "2024-03",
+      name: "test",
+      income: 20000.00,
+      tax: 975.14,
+    },
+    {
+      time: "2024-02",
+      name: "test",
+      income: 20000.00,
+      tax: 436.89,
+    },
+    {
+      time: "2024-01",
+      name: "test",
+      income: 20060.00,
+      tax: 438.69,
     },
   ];
   return (
@@ -61,12 +73,12 @@ export default function Index() {
               <Text> ：</Text>
             </View>
 
-            <Text>13755.12元</Text>
+            <Text>140060.00元</Text>
           </View>
           <View className="br-bottom "></View>
           <View className="flex justify-between pt-[5px]">
             <Text>已申报税额合计：</Text>
-            <Text>6355.12元</Text>
+            <Text>7675.94元</Text>
           </View>
         </View>
         <View className="w-full h-[10px] bg-[#f4f6f9]"></View>
@@ -93,11 +105,11 @@ export default function Index() {
                 </View>
                 <View>
                   <Text>收入：</Text>
-                  <Text>{i.income}元</Text>
+                  <Text>{i.income.toFixed(2)}元</Text>
                 </View>
                 <View>
                   <Text>已申报税额：</Text>
-                  <Text>{i.tax}元</Text>
+                  <Text>{i.tax.toFixed(2)}元</Text>
                 </View>
               </View>
               <View className="text-[#ddd]  flex items-center text-[20px] iconfont icon-a-teshuyoujiantou "></View>
